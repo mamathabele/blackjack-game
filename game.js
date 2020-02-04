@@ -54,24 +54,13 @@ function createdeck() {
     }
     return deck;
 }
-//console.log(deck);
+
 //shuffle the deck and pic 2random locations
 function shuffle(deck){
-    // for(let j = 0; j < deck.length; j++){
-    //     var dealer = [Math.floor(Math.random() * deck.length)];
-    //     var player = [Math.floor(Math.random() * deck.length)];
-
-    //       var temp = deck[dealer]
-    //       deck[dealer] = deck[player];
-    //       deck[player] = temp;
-    // }
-//console.log(dealer,player);
-
 // generate the randomindex from deck of cards
     var randomindex = [Math.floor(Math.random() * deck.length)];
     return deck[randomindex];
 }
-//console.log(shuffle(deck));
 
 // start game function will generate two cards foreach  dealerhand and playerhand
 function startgame(){
@@ -138,13 +127,3 @@ function startgame(){
     }
 
 }
-
- startgame();
-//  console.log('playerhand:' + playerhand);
-//  console.log('playerhand sum value:' + gethandvalue(playerhand));
-//  console.log('dealerhand:' + dealerhand);
-//  console.log('dealerhand sum value:' + gethandvalue(dealerhand));
-updateView();
-
-//  document.getElementById(playerhand).innerHTML = playerhand;
-//  document.getElementById(playerhand).innerHTML = playerhand;
